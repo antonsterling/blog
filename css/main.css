@@ -1,0 +1,359 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.home-body{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.max-width{
+    max-width: 1024px;
+}
+
+
+a{
+    margin: 0px;
+    text-decoration: none;
+    color: black;
+}
+
+span{
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    height: 130px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+header .header-icons-container{
+    width: 100%;
+    height: 40px;
+    display: grid;
+    background-color: #48cfad;
+}
+
+header .header-icons-container .icons{
+    width: 300px;
+    display: flex;
+    place-items: center;
+    justify-self: end;
+    justify-content: space-around;
+    margin-right: 20px;
+}
+
+header .icons span{
+    color: rgb(255, 255, 255);
+}
+
+.nav-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+}
+
+.nav-container .nav-logo-container{
+    margin-left: 20px;
+}
+
+.nav-container .nav-logo-container img{
+    width: 200px;
+}
+
+.nav-container .profile-link{
+    align-self: center;
+    justify-self: end;
+    margin-right: 40px;
+}
+
+nav .profile-link a{
+    border-bottom: 1px solid rgb(65, 65, 65);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(65, 65, 65);
+}
+
+.home-main{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/blog/assets/cover.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-info-container{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+}
+
+.home-main .home-mensaje{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 30px;
+    font-weight:  700px;
+    letter-spacing: 10px;
+    text-align: center;
+    place-self: center;
+    color: rgb(230, 250, 255);
+    
+}
+
+.home-main .home-boton{
+    width: 100px;
+    height: 35px;
+    justify-self: center;
+    cursor: pointer;
+    padding: 0;
+}
+
+.home-main .text-boton{
+    color: rgb(65, 65, 65);
+    font-weight: bold;
+    font-size: 16px;
+    padding: 9px 15px; 
+}
+
+.blogs-main{
+    display: grid;
+}
+
+.blogs-news-container{
+    background-color: rgba(65, 65, 65, 0.2);
+    padding: 0 80px 20px;
+}
+
+.blogs-main-new{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 2fr;
+    gap: 10px;
+}
+
+.blogs-main-new h3{
+    font-size: 16px;
+}
+
+.blogs-images-container{
+    grid-column: 1;
+}
+
+.blogs-images-container img{
+    width: 80%;
+    justify-items: center;
+}
+
+.blogs-new-info-container{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.blogs-new-info-container h3{
+    margin: 0;
+}
+
+.blogs-new-info-container p{
+    font-size: 12px;
+}
+
+.blogs-button, .perfil-button{
+    margin-top: 10px;
+    width: 80px;
+    height: 35px;
+    cursor: pointer;
+    border: 1px solid rgba(65, 65, 65, 0.2);
+    background-color: transparent;
+    padding: 0;
+    margin-left: calc(50% - 40px);
+}
+
+.blogs-button:hover,  .perfil-button:hover{
+    background-color: #48cfad8c;
+}
+
+.blogs-button a{
+    font-size: 12px;
+    font-weight: bold;
+    padding: 11px 12.5px 8px;
+}
+
+.blogs-post-container{
+    padding: 0 80px 40px;
+    display: grid;
+    grid-template-rows: 80px 1fr;
+}
+
+.blogs-post-container h3{
+    border-bottom: 1px solid rgba(65, 65, 65, 0.2);
+    text-align: center;
+    padding-bottom: 20px;
+    
+}
+
+.blogs-post-article{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin: auto;
+}
+
+.post-container{
+    border: 1px solid rgba(65, 65, 65, 0.2);
+    padding: 7px;
+    border-radius: 5px;
+}
+.post-container h4{
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.post-container p{
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.post-container img{
+    width: 100%;
+}
+
+.post-container .blogs-button{
+    margin-bottom: 5px;
+}
+
+footer{
+    width: 100%;
+    border-top: 20px solid #48cfad;
+}
+
+footer p{
+    margin: 0;
+    font-size: 12px;
+    text-align: center;
+    color: white;
+    background-color: rgba(65, 65, 65);
+    padding: 10px;
+}
+
+.blog-main{
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+.blog-main .blogpost-image{
+    width: 80%;
+    justify-self: center;
+}
+
+.blog-main .blogpost-main-container{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.blogpost-main-container h3{
+    font-size: 16px;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(65, 65, 65, 0.2);
+}
+
+.blogpost-article h2{
+    font-size: 24px;
+}
+
+.blogpost-article p{
+    font-size: 12px;
+}
+
+.contact-main-container{
+    background-color: rgba(65, 65, 65, 0.2);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-info-container{
+    display: flex;
+    padding: 30px 40px;
+    gap: 10px;
+}
+.contact-info-container img{
+    width: 70px;
+    height: 70px;
+}
+
+.contact-left a, .contact-rigth a{
+    font-size: 14px;
+    border-bottom: 1px solid rgba(65, 65, 65, 0.5);
+}
+
+.contact-left p, .contact-rigth p{
+    font-size: 10px;
+}
+
+.perfil-main{
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+.perfil-news-container{
+    display: flex;
+    place-items: center;
+    background-color: rgba(65, 65, 65, 0.5);
+    padding: 30px 20px;
+}
+
+.perfil-images-container{
+    width: 100%;
+    display: grid;
+}
+
+.perfil-images-container img{
+    width: 80%;
+    justify-self: center;
+}
+
+.perfil-new-info-container{
+    width: 100%;
+}
+
+.perfil-new-info-container h3{
+    font-size: 20px;
+}
+
+.perfil-new-info-container p{
+    font-size: 12px;
+}
+
+.perfil-post-container{
+    display: grid;
+    grid-template-rows: auto auto;
+    margin: auto;
+}
+
+.perfil-post-container h3{
+    justify-self: center;
+    margin-bottom: 0;
+}
+
+.perfil-post-article{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    padding: 20px;
+}
